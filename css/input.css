@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .primary-button {
+    @apply py-1 px-5 font-Lato_Black border-2 border-secondary-color rounded;
+  }
+  .primary-title {
+    @apply text-7xl;
+  }
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../assets/font/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cardo-Bold";
+  src: url("../assets/font/Cardo-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../assets/font/Lato-Regular.ttf") format("truetype");
+}
