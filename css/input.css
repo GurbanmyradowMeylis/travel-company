@@ -3,14 +3,27 @@
 @tailwind utilities;
 
 @layer components {
+  p {
+    @apply font-Lato-Regular;
+  }
   .primary-button {
     @apply py-1 px-5 font-Lato-Black border-2 text-secondary-color border-secondary-color rounded hover:bg-secondary-color transition-colors duration-300 hover:text-primary-color;
   }
   .primary-title {
-    @apply text-7xl;
+    @apply text-7xl font-Cardo-Bold;
+  }
+  .secondary-title {
+    @apply text-4xl font-Cardo-Bold;
   }
   .limiter-container {
-    @apply mx-40;
+    @apply mx-32;
+  }
+  .flex-parent {
+    @apply flex flex-col gap-5;
+  }
+
+  .divider {
+    @apply border-t-4 border-solid border-secondary-color w-14;
   }
 }
 
