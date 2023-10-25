@@ -4,13 +4,13 @@
 
 @layer components {
   .primary-button {
-    @apply py-1 px-5 font-Lato-Black border-2 text-secondary-color border-secondary-color rounded hover:bg-secondary-color transition-colors hover:text-primary-color;
+    @apply py-1 px-5 font-Lato-Black border-2 text-secondary-color border-secondary-color rounded hover:bg-secondary-color transition-colors duration-300 hover:text-primary-color;
   }
   .primary-title {
     @apply text-7xl;
   }
   .limiter-container {
-    @apply max-w-7xl mx-auto;
+    @apply mx-40;
   }
 }
 

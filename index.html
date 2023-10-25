@@ -7,51 +7,36 @@
     <title>document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- ! styles (internal) -->
-    <style>
-      .background-image {
-        background-image: url("./assets/images/2-section/Scribble-right.png"),
-          url("./assets/images/2-section/Scribble-left.png");
-        background-position: 0% 0%, 105% 100%;
-        background-repeat: no-repeat, no-repeat;
-      }
-      .height {
-        height: 85vh;
-      }
-    </style>
-    <!-- ! end styles -->
   </head>
-  <!-- ! end head -->
 
-  <body class="flex flex-col">
+  <body class="flex flex-col bg-primary-color">
     <!-- ! header -->
-    <header class="bg-primary-color">
-      <!-- ! limiter (ограничитель)-->
-      <div class="limiter-container">
-        <nav class="flex justify-between pt-5 pb-32">
-          <ul class="flex space-x-20 font-Lato-Regular text-xl text-nav-color">
-            <li>
-              <a href="#" class="text-secondary-color font-Lato-Black">Home</a>
-            </li>
-            <li><a href="#" class="">Guides</a></li>
-            <li>
-              <a href="#" class="">Flights</a>
-            </li>
-            <li>
-              <a href="#" class="">About</a>
-            </li>
-          </ul>
-          <button class="primary-button">Contact Us</button>
-        </nav>
-      </div>
-      <!-- ! end limiter -->
+    <header class="limiter-container">
+      <nav class="flex justify-between pt-10 pb-32">
+        <ul class="flex space-x-20 font-Lato-Regular text-xl text-nav-color">
+          <li>
+            <a href="#" class="text-secondary-color font-Lato-Black">Home</a>
+          </li>
+          <li><a href="#" class="">Guides</a></li>
+          <li>
+            <a href="#" class="">Flights</a>
+          </li>
+          <li>
+            <a href="#" class="">About</a>
+          </li>
+        </ul>
+        <button class="primary-button">Contact Us</button>
+      </nav>
     </header>
-    <!-- ! end header -->
 
     <!-- ! main content -->
     <main class="w-full flex-grow">
       <!-- ! first section that under the navigation -->
-      <div class="flex flex-row items-start space-y-5 bg-primary-color height">
+      <section
+        class="flex flex-row items-start space-y-5 bg-primary-color pb-40"
+      >
         <!-- ! limiter (ограничитель) -->
         <div class="limiter-container flex gap-20">
           <div class="flex flex-col items-start gap-10 w-1/2">
@@ -78,11 +63,10 @@
             />
           </div>
         </div>
-      </div>
-      <!-- ! end  first section -->
+      </section>
 
       <!-- ! second section with dark background -->
-      <div class="bg-secondary-color text-primary-color pb-10 pt-3">
+      <section class="bg-secondary-color text-primary-color pb-10 pt-3">
         <div class="background-image">
           <div
             class="limiter-container flex flex-col items-center text-center gap-5"
@@ -105,13 +89,10 @@
             </button>
           </div>
         </div>
-      </div>
-      <!-- ! end second section -->
+      </section>
     </main>
-    <!-- ! end main -->
 
     <!-- ! footer -->
     <footer></footer>
-    <!-- ! end footer  -->
   </body>
 </html>

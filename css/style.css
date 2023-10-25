@@ -1,0 +1,6 @@
+.background-image {
+  background-image: url("./assets/images/2-section/Scribble-right.png"),
+    url("./assets/images/2-section/Scribble-left.png");
+  background-position: 0% 0%, 105% 100%;
+  background-repeat: no-repeat, no-repeat;
+}
