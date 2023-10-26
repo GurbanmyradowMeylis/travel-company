@@ -1,18 +1,18 @@
-.background-image1 {
+.background-image {
   background-image: url("../assets/images/1-section/scribbleDark.png"),
     url("../assets/images/1-section/Scribble\ Lightest.png");
   background-position: 100% 140%, 0% -10%;
   background-repeat: no-repeat, no-repeat;
 }
 
-.background-image {
+.background-image-1 {
   background-image: url("../assets/images/2-section/Scribble-right.png"),
     url("../assets/images/2-section/Scribble-left.png");
-  background-position: 0% 0%;
+  background-position: 0% 0%, 100% 100%;
   background-repeat: no-repeat, no-repeat;
 }
 
-.background-image2 {
+.background-image-2 {
   background-image: url("../assets/images/3-section/Scribble-right.png"),
     url("../assets/images/3-section/Scribble-left.png");
   background-position: 0% 60%, 100% 70%;
@@ -20,7 +20,7 @@
 }
 
 /* ! it is available when next section done */
-.background-image3 {
+.background-image-3 {
   background-image: url("../assets/images/4-section/Scribble\ Dark.png");
   background-position: 10% 55%, 100% 200%;
   background-repeat: no-repeat, no-repeat;
