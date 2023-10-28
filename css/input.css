@@ -25,6 +25,12 @@
   .line {
     @apply w-14 bg-secondary-color h-1;
   }
+  .divider {
+    @apply line w-full my-3;
+  }
+  .main-style-input {
+    @apply border-2 py-2 px-6 border-secondary-color rounded placeholder:text-secondary-color w-full;
+  }
 }
 
 @font-face {

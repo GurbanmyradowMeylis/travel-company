@@ -22,6 +22,25 @@
 /* ! it is available when next section done */
 .background-image-3 {
   background-image: url("../assets/images/4-section/Scribble\ Dark.png");
-  background-position: 10% 55%, 100% 200%;
+  background-position: 10% 55%;
+  background-repeat: no-repeat;
+}
+
+.background-image-4 {
+  background-image: url("../assets/images/6-section/Scribble\ Light.png");
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+}
+
+.background-image-5 {
+  background-image: url("../assets/images/8-section/Scribble\ Dark.png"),
+    url("../assets/images/8-section/Scribble\ Dark2.png");
+  background-position: 100% 90%, 0% 30%;
   background-repeat: no-repeat, no-repeat;
+}
+
+.background-image-6 {
+  background-image: url("../assets/images/11-section/Scribble\ Dark.png");
+  background-position: 0% 80%;
+  background-repeat: no-repeat;
 }
