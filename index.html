@@ -6,18 +6,21 @@
     <title>document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/output.css" />
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body class="flex flex-col bg-primary-color">
     <!-- ! header -->
-    <header class="limiter-container">
-      <nav class="flex justify-between pt-10 pb-32">
-        <ul class="flex space-x-20 font-Lato-Regular text-xl text-nav-color">
+    <header class="limiter-container max-lg:hidden">
+      <nav class="flex justify-between pt-10 pb-32 max-2xl:pb-20">
+        <ul
+          class="flex space-x-20 font-Lato-Regular text-xl text-nav-color max-2xl:text-lg"
+        >
           <li>
             <a href="#" class="text-secondary-color font-Lato-Black">Home</a>
           </li>
-          <li><a href="#">Guides</a></li>
+          <li>
+            <a href="#">Guides</a>
+          </li>
           <li>
             <a href="#">Flights</a>
           </li>
@@ -30,15 +33,17 @@
     </header>
 
     <!-- ! main content -->
-    <main class="w-full flex-grow">
+    <main class="w-full flex-grow max-lg:hidden">
       <!-- ! first section that under the navigation -->
-      <section class="pb-40 background-image">
-        <div class="limiter-container flex gap-20">
-          <div class="flex flex-col items-start gap-10 flex-[1_1_50%]">
-            <h1 class="main-style-title max-w-2xl">
+      <section class="pb-40 background-image max-2xl:pb-36">
+        <div class="limiter-container flex gap-20 max-2xl:gap-10">
+          <div
+            class="flex flex-col items-start gap-10 flex-[1_1_50%] max-2xl:gap-4"
+          >
+            <h1 class="main-style-title max-w-2xl max-2xl:max-w-xs">
               Travel to your dream destination.
             </h1>
-            <p class="max-w-2xl">
+            <p class="max-w-2xl max-2xl:max-w-md">
               Embark on an unforgettable journey to your dream destination,
               where pristine beaches meet towering mountains. Explore vibrant
               cultures, taste exotic cuisines, and create lifelong memories.
@@ -52,7 +57,7 @@
           <div>
             <img
               src="./assets/images/1-section/nature.jpg"
-              class="w-full h-full"
+              class="w-full h-full object-contain max-2xl:w-4/5 max-2xl:h-/w-4/5"
               alt="nature"
             />
           </div>
@@ -66,7 +71,7 @@
         <div
           class="limiter-container flex flex-col items-center text-center gap-5"
         >
-          <div class="max-w-3xl flex flex-col gap-5">
+          <div class="max-w-3xl flex flex-col gap-5 max-2xl:max-w-xl max-2xl:">
             <h1 class="main-style-title text-primary-color">
               Create a memmory to remember!
             </h1>
@@ -86,63 +91,28 @@
       </section>
 
       <!-- ! third section -->
-      <section class="background-image-2 pb-[400px] pt-40">
-        <div class="flex gap-16 limiter-container">
-          <div class="flex-card">
-            <img
-              src="./assets/images/3-section/personOnMauntain.jpg"
-              alt="a person that on the mauntain"
-              class="h-full"
-            />
-            <div class="line"></div>
-            <h1 class="common-style-title">Journey's Embrace</h1>
-            <p>
-              Discover the world's hidden wonders through the eyes of passionate
-              explorers, as they embark on transformative adventures that
-              redefine the meaning of wanderlust.
-            </p>
-          </div>
-          <div class="flex-card">
-            <img
-              src="./assets/images/3-section/mauntain.jpg"
-              alt="a mauntain"
-              class="h-full"
-            />
-            <div class="line"></div>
-            <h1 class="common-style-title">Wanderer's Tapestry</h1>
-            <p>
-              Unravel the threads of diverse cultures, breathtaking landscapes,
-              and personal growth as travel logs weave tales of exploration and
-              ignite the spirit of wanderlust.
-            </p>
-          </div>
-          <div class="flex-card">
-            <img
-              src="./assets/images/3-section/personOnMauntain1.jpg"
-              alt="a person On Mauntain"
-              class="h-full"
-            />
-            <div class="line"></div>
-            <h1 class="common-style-title">Footprints Unbound</h1>
-            <p>
-              Follow the footprints of intrepid nomads as their travel logs
-              unveil extraordinary destinations, unforgettable encounters, and
-              the boundless freedom that comes with embracing the unknown.
-            </p>
-          </div>
-        </div>
+      <section
+        class="background-image-2 pb-[400px] pt-40 max-2xl:pt-20 max-2xl:pb-[200px]"
+      >
+        <div class="flex gap-16 limiter-container" id="cardParent"></div>
       </section>
 
       <!-- ! fourth section -->
-      <section class="background-image-3 pb-[270px] relative">
+      <section
+        class="background-image-3 pb-[270px] relative max-2xl:pb-[135px]"
+      >
         <img
           src="./assets/images/4-section/Scribble Lightest.png"
           class="absolute right-0 -bottom-1/4"
           alt=""
         />
-        <div class="flex flex-col gap-5 text-center items-center">
+        <div class="flex flex-col gap-5 text-center items-center max-2xl:gap-3">
           <div>
-            <img src="./assets/icon/Airplace Icon.png" alt="Airplace icon" />
+            <img
+              src="./assets/icon/Airplace Icon.png"
+              alt="Airplace icon"
+              class="max-2xl:w-20 max-2xl:h-w-20"
+            />
           </div>
           <div class="max-w-xl mt-5">
             <h1 class="main-style-title">
@@ -172,8 +142,8 @@
             alt="tape"
           />
         </div>
-        <div class="flex flex-col gap-5">
-          <div>
+        <div class="flex flex-col gap-5 relative">
+          <div class="">
             <img
               src="./assets/images/5-section/mauntain (2).jpg"
               class="w-96 h-72"
@@ -199,28 +169,26 @@
               </p>
             </div>
           </div>
-          <div class="flex justify-end">
-            <img
-              src="./assets/images/5-section/Arrow.png"
-              class="mt-14"
-              alt="Arrow"
-            />
-          </div>
+          <img
+            src="./assets/images/5-section/Arrow.png"
+            alt="Arrow"
+            class="absolute right-0 bottom-0"
+          />
         </div>
       </section>
 
       <!-- ! sixth section -->
       <section
-        class="bg-secondary-color text-primary-color pt-32 pb-[155px] mb-44 background-image-4"
+        class="bg-secondary-color text-primary-color pt-32 pb-[155px] mb-44 background-image-4 max-2xl:pt-16 max-2xl:pb-[77.5px] max-2xl:mb-24"
       >
         <div class="limiter-container flex gap-10">
-          <div class="basis-1/2 flex flex-col gap-10">
+          <div class="basis-1/2 flex flex-col gap-14">
             <h1 class="main-style-title text-primary-color">
               Choose anywhere you’d like to be
             </h1>
 
-            <div class="flex flex-col gap-8 max-w-md text-justify">
-              <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-10 max-w-md text-justify">
+              <div class="flex flex-col gap-4">
                 <h1 class="common-style-title text-primary-color">
                   Lorem, ipsum dolor.
                 </h1>
@@ -231,7 +199,7 @@
                   aliquid? Dolorum iste blanditiis dolorem eum quibusdam.
                 </p>
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-4">
                 <h1 class="common-style-title text-primary-color">
                   Lorem, ipsum dolor.
                 </h1>
@@ -247,7 +215,7 @@
           <div class="basis-1/2">
             <img
               src="./assets/images/6-section/personOnMauntain.jpg"
-              class=""
+              class="h-full object-contain"
               alt=""
             />
           </div>
@@ -256,13 +224,13 @@
 
       <!-- ! seventh section -->
       <section class="flex limiter-container">
-        <div class="flex flex-col basis-3/4">
+        <div class="flex flex-col basis-1/2">
           <div>
             <h1 class="main-style-title max-w-3xl">
               Lorem ipsum dolor sit amet consectetur.
             </h1>
           </div>
-          <div class="flex flex-col max-w-lg">
+          <div class="flex flex-col max-w-lg" id="paragraghsParent">
             <div id="paragraghs">
               <div class="divider"></div>
 
@@ -310,7 +278,7 @@
             </div>
           </div>
         </div>
-        <div class="basis-1/4">
+        <div class="flex justify-end basis-1/2">
           <img
             src="./assets/images/7-section/personOnMauntain1.jpg"
             class=""
@@ -320,7 +288,9 @@
       </section>
 
       <!-- ! eighth section -->
-      <section class="pt-80 pb-48 background-image-5">
+      <section
+        class="pt-80 pb-48 background-image-5 max-2xl:pt-40 max-2xl:pb-24"
+      >
         <div class="limiter-container">
           <div class="flex justify-center text-center">
             <h1 class="main-style-title mb-5 max-w-xl">
@@ -328,11 +298,8 @@
             </h1>
           </div>
           <div>
-            <div class="grid grid-cols-3 gap-5">
-              <div
-                id="card"
-                class="border-2 rounded h-fit border-secondary-color py-8 px-14 text-center relative"
-              >
+            <div class="grid grid-cols-3 gap-5 text-center">
+              <div id="card" class="main-style-card relative">
                 <div class="flex justify-center">
                   <img src="./assets/images/8-section/body__img.png" alt="" />
                 </div>
@@ -345,49 +312,51 @@
                     sed do ei usmod tempor incid idunt ut labore.
                   </p>
                 </div>
-                <button class="absolute -left-10 top-1/2">
+                <button
+                  class="absolute -left-10 top-36 border-[3px] border-secondary-color p-5 rounded-md bg-primary-color"
+                >
+                  <img
+                    src="./assets/images/8-section/Arrow.png"
+                    class=""
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div id="card" class="main-style-card">
+                <div class="flex justify-center">
+                  <img src="./assets/images/8-section/body__img.png" alt="" />
+                </div>
+                <div class="flex flex-col gap-5">
+                  <h1 class="common-style-title font-Lato-Black">
+                    Customer Name
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incid idunt ut labore.
+                  </p>
+                </div>
+              </div>
+              <div id="card" class="main-style-card relative">
+                <div class="flex justify-center">
+                  <img src="./assets/images/8-section/body__img.png" alt="" />
+                </div>
+                <div class="flex flex-col gap-5">
+                  <h1 class="common-style-title font-Lato-Black">
+                    Customer Name
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do ei usmod tempor incid idunt ut labore.
+                  </p>
+                </div>
+                <button
+                  class="absolute -right-10 top-36 border-[3px] border-secondary-color p-5 rounded-md bg-primary-color"
+                >
                   <img
                     src="./assets/images/8-section/Arrow.png"
                     class="rotate-180"
                     alt=""
                   />
-                </button>
-              </div>
-              <div
-                id="card"
-                class="border-2 rounded h-fit border-secondary-color py-8 px-14 text-center"
-              >
-                <div class="flex justify-center">
-                  <img src="./assets/images/8-section/body__img.png" alt="" />
-                </div>
-                <div class="flex flex-col gap-5">
-                  <h1 class="common-style-title font-Lato-Black">
-                    Customer Name
-                  </h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do ei usmod tempor incid idunt ut labore.
-                  </p>
-                </div>
-              </div>
-              <div
-                id="card"
-                class="border-2 rounded h-fit border-secondary-color py-8 px-14 text-center relative"
-              >
-                <div class="flex justify-center">
-                  <img src="./assets/images/8-section/body__img.png" alt="" />
-                </div>
-                <div class="flex flex-col gap-5">
-                  <h1 class="common-style-title font-Lato-Black">
-                    Customer Name
-                  </h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do ei usmod tempor incid idunt ut labore.
-                  </p>
-                </div>
-                <button class="absolute -right-10 top-1/2">
-                  <img src="./assets/images/8-section/Arrow.png" alt="" />
                 </button>
               </div>
             </div>
@@ -396,8 +365,8 @@
       </section>
 
       <!-- ! nineth section -->
-      <section class="flex justify-between mb-[214px]">
-        <div class="limiter-container flex mr-0 flex-col gap-10">
+      <section class="flex justify-between mb-[214px] max-2xl:mb-[107px]">
+        <div class="limiter-container flex flex-col gap-10">
           <h1 class="main-style-title text-6xl">Be updated!</h1>
           <form class="flex flex-col items-start gap-5">
             <input
@@ -432,10 +401,10 @@
             />
           </form>
         </div>
-        <div class="limiter-container mr-0 basis-1/2">
+        <div class="limiter-container">
           <img
             src="./assets/images/9-section/Place Your Image Here (Double Click To Edit).jpg"
-            class="h-5/6"
+            class="h-4/5"
             alt=""
           />
         </div>
@@ -443,38 +412,32 @@
     </main>
 
     <!-- ! footer -->
-    <footer class="flex flex-col bg-accent-color gap-5 pt-8 background-image-6">
-      <div class="flex limiter-container gap-11">
-        <h1 class="main-style-title">My Log Travels</h1>
+    <footer
+      class="flex flex-col bg-accent-color gap-5 pt-8 background-image-6 max-lg:hidden"
+    >
+      <div class="flex limiter-container gap-24">
+        <h1 class="main-style-title max-w-xs">My Log Travels</h1>
         <div class="flex flex-col gap-5">
           <h1 class="common-style-title font-Lato-Black mt-6">Quick links</h1>
-          <div class="flex gap-20">
-            <div class="flex flex-col">
-              <a href="#">Home</a>
-              <a href="#">About Us</a>
-              <a href="#">My Travel Logs</a>
-            </div>
-            <div class="flex flex-col">
-              <a href="#">Travels</a>
-              <a href="#">Promo Flights</a>
-              <a href="#">Travel Routes</a>
-            </div>
-            <div class="flex flex-col">
-              <a href="#">Recommendations</a>
-              <a href="#">Guides</a>
-              <a href="#">Blogs</a>
-            </div>
-            <div class="flex flex-col">
-              <a href="#">Mission Statement</a>
-              <a href="#">The Team</a>
-              <a href="#">Contact Us</a>
-            </div>
-          </div>
+          <div class="flex gap-20" id="linksParent"></div>
         </div>
       </div>
       <div class="text-center p-14">
         <p>2021 - 2022 My Log Travels. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <div
+      id="mobile"
+      class="max-lg:visible lg:hidden text-2xl flex flex-col items-center justify-center gap-2 text-center min-h-screen"
+    >
+      <p>This website is not available on Mobile devices</p>
+      <a
+        href="https://github.com/GurbanmyradowMeylis"
+        class="text-blue-500 underline"
+        >Creator</a
+      >
+    </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
