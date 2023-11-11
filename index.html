@@ -13,7 +13,7 @@
     <header class="limiter-container max-lg:hidden">
       <nav class="flex justify-between pt-10 pb-32 max-2xl:pb-20">
         <ul
-          class="flex space-x-20 font-Lato-Regular text-xl text-nav-color max-2xl:text-lg"
+          class="flex space-x-20 font-Lato-Regular text-xl text-nav-color max-2xl:text-lg max-xl:text-base"
         >
           <li>
             <a href="#" class="text-secondary-color font-Lato-Black">Home</a>
@@ -35,12 +35,14 @@
     <!-- ! main content -->
     <main class="w-full flex-grow max-lg:hidden">
       <!-- ! first section that under the navigation -->
-      <section class="pb-40 background-image max-2xl:pb-36">
-        <div class="limiter-container flex gap-20 max-2xl:gap-10">
+      <section class="pb-40 background-image max-2xl:pb-36 max-xl:pb-48">
+        <div class="limiter-container flex gap-20 max-2xl:gap-10 max-xl:gap-5">
           <div
             class="flex flex-col items-start gap-10 flex-[1_1_50%] max-2xl:gap-4"
           >
-            <h1 class="main-style-title max-w-2xl max-2xl:max-w-xs">
+            <h1
+              class="main-style-title max-w-2xl max-2xl:max-w-xs max-xl:max-w-[16rem]"
+            >
               Travel to your dream destination.
             </h1>
             <p class="max-w-2xl max-2xl:max-w-md">
@@ -71,7 +73,9 @@
         <div
           class="limiter-container flex flex-col items-center text-center gap-5"
         >
-          <div class="max-w-3xl flex flex-col gap-5 max-2xl:max-w-xl max-2xl:">
+          <div
+            class="max-w-3xl flex flex-col gap-5 max-2xl:max-w-xl max-xl:max-w-md"
+          >
             <h1 class="main-style-title text-primary-color">
               Create a memmory to remember!
             </h1>
@@ -104,14 +108,13 @@
         <img
           src="./assets/images/4-section/Scribble Lightest.png"
           class="absolute right-0 -bottom-1/4"
-          alt=""
         />
         <div class="flex flex-col gap-5 text-center items-center max-2xl:gap-3">
           <div>
             <img
               src="./assets/icon/Airplace Icon.png"
               alt="Airplace icon"
-              class="max-2xl:w-20 max-2xl:h-w-20"
+              class="max-2xl:w-20 max-2xl:h-w-20 max-xl:w-h-16 max-xl:h-16 max-xl:object-contain"
             />
           </div>
           <div class="max-w-xl mt-5">
@@ -138,15 +141,15 @@
           />
           <img
             src="./assets/images/5-section/Tape.png"
-            class="absolute top-1/4 -left-[7%]"
+            class="absolute top-1/4 -left-[7%] max-xl:h-56 max-xl:w-16"
             alt="tape"
           />
         </div>
         <div class="flex flex-col gap-5 relative">
-          <div class="">
+          <div>
             <img
               src="./assets/images/5-section/mauntain (2).jpg"
-              class="w-96 h-72"
+              class="w-96 h-72 max-xl:w-80 max-xl:h-60"
               alt="mauntain"
             />
           </div>
@@ -154,7 +157,7 @@
             <h1 class="common-style-title max-w-xs">
               <u>Summit Serenity: Conquering Nature's Majestic Peaks</u>
             </h1>
-            <div class="flex flex-col max-w-xl gap-5">
+            <div class="flex flex-col max-w-xl gap-5 max-xl:max-w-md">
               <p>
                 Conquer Majestic Heights: Explore the breathtaking beauty and
                 thrilling adventures that await in the towering landscapes of
@@ -172,7 +175,7 @@
           <img
             src="./assets/images/5-section/Arrow.png"
             alt="Arrow"
-            class="absolute right-0 bottom-0"
+            class="absolute right-0 bottom-0 max-xl:w-32 max-xl:h-12"
           />
         </div>
       </section>
@@ -182,12 +185,14 @@
         class="bg-secondary-color text-primary-color pt-32 pb-[155px] mb-44 background-image-4 max-2xl:pt-16 max-2xl:pb-[77.5px] max-2xl:mb-24"
       >
         <div class="limiter-container flex gap-10">
-          <div class="basis-1/2 flex flex-col gap-14">
+          <div class="basis-1/2 flex flex-col gap-14 max-xl:gap-10">
             <h1 class="main-style-title text-primary-color">
               Choose anywhere you’d like to be
             </h1>
 
-            <div class="flex flex-col gap-10 max-w-md text-justify">
+            <div
+              class="flex flex-col gap-10 max-w-md text-justify max-xl:gap-7"
+            >
               <div class="flex flex-col gap-4">
                 <h1 class="common-style-title text-primary-color">
                   Lorem, ipsum dolor.
@@ -216,7 +221,6 @@
             <img
               src="./assets/images/6-section/personOnMauntain.jpg"
               class="h-full object-contain"
-              alt=""
             />
           </div>
         </div>
@@ -224,7 +228,7 @@
 
       <!-- ! seventh section -->
       <section class="flex limiter-container">
-        <div class="flex flex-col basis-1/2">
+        <div class="flex flex-col basis-1/2 gap-3">
           <div>
             <h1 class="main-style-title max-w-3xl">
               Lorem ipsum dolor sit amet consectetur.
@@ -281,8 +285,7 @@
         <div class="flex justify-end basis-1/2">
           <img
             src="./assets/images/7-section/personOnMauntain1.jpg"
-            class=""
-            alt=""
+            class="max-xl:w-9h-96 max-xl:h-96"
           />
         </div>
       </section>
@@ -301,7 +304,7 @@
             <div class="grid grid-cols-3 gap-5 text-center">
               <div id="card" class="main-style-card relative">
                 <div class="flex justify-center">
-                  <img src="./assets/images/8-section/body__img.png" alt="" />
+                  <img src="./assets/images/8-section/body__img.png" />
                 </div>
                 <div class="flex flex-col gap-5">
                   <h1 class="common-style-title font-Lato-Black">
@@ -312,19 +315,13 @@
                     sed do ei usmod tempor incid idunt ut labore.
                   </p>
                 </div>
-                <button
-                  class="absolute -left-10 top-36 border-[3px] border-secondary-color p-5 rounded-md bg-primary-color"
-                >
-                  <img
-                    src="./assets/images/8-section/Arrow.png"
-                    class=""
-                    alt=""
-                  />
+                <button class="arrow -left-10">
+                  <img src="./assets/images/8-section/Arrow.png" />
                 </button>
               </div>
               <div id="card" class="main-style-card">
                 <div class="flex justify-center">
-                  <img src="./assets/images/8-section/body__img.png" alt="" />
+                  <img src="./assets/images/8-section/body__img.png" />
                 </div>
                 <div class="flex flex-col gap-5">
                   <h1 class="common-style-title font-Lato-Black">
@@ -338,7 +335,7 @@
               </div>
               <div id="card" class="main-style-card relative">
                 <div class="flex justify-center">
-                  <img src="./assets/images/8-section/body__img.png" alt="" />
+                  <img src="./assets/images/8-section/body__img.png" />
                 </div>
                 <div class="flex flex-col gap-5">
                   <h1 class="common-style-title font-Lato-Black">
@@ -349,13 +346,10 @@
                     sed do ei usmod tempor incid idunt ut labore.
                   </p>
                 </div>
-                <button
-                  class="absolute -right-10 top-36 border-[3px] border-secondary-color p-5 rounded-md bg-primary-color"
-                >
+                <button class="arrow -right-10">
                   <img
                     src="./assets/images/8-section/Arrow.png"
                     class="rotate-180"
-                    alt=""
                   />
                 </button>
               </div>
@@ -367,33 +361,29 @@
       <!-- ! nineth section -->
       <section class="flex justify-between mb-[214px] max-2xl:mb-[107px]">
         <div class="limiter-container flex flex-col gap-10">
-          <h1 class="main-style-title text-6xl">Be updated!</h1>
+          <h1 class="main-style-title">Be updated!</h1>
           <form class="flex flex-col items-start gap-5">
             <input
               type="text"
-              id=""
               class="main-style-input"
               placeholder="First Name*"
             />
             <input
               type="text"
-              id=""
               class="main-style-input"
               placeholder="Last Name*"
             />
             <input
               type="text"
-              id=""
               class="main-style-input"
               placeholder="Email Subject*"
             />
-
             <textarea
               placeholder="Write something here..."
-              cols="30"
-              rows="10"
               class="main-style-input"
+              style="width: 30ch; height: 10ch"
             ></textarea>
+
             <input
               type="submit"
               value="Submit Email"
@@ -401,11 +391,10 @@
             />
           </form>
         </div>
-        <div class="limiter-container">
+        <div class="limiter-container flex">
           <img
             src="./assets/images/9-section/Place Your Image Here (Double Click To Edit).jpg"
             class="h-4/5"
-            alt=""
           />
         </div>
       </section>
@@ -419,10 +408,13 @@
         <h1 class="main-style-title max-w-xs">My Log Travels</h1>
         <div class="flex flex-col gap-5">
           <h1 class="common-style-title font-Lato-Black mt-6">Quick links</h1>
-          <div class="flex gap-20" id="linksParent"></div>
+          <div
+            class="flex gap-20 max-2xl:gap-10 max-xl:gap-11 whitespace-nowrap"
+            id="linksParent"
+          ></div>
         </div>
       </div>
-      <div class="text-center p-14">
+      <div class="text-center p-14 max-xl:p-7">
         <p>2021 - 2022 My Log Travels. All Rights Reserved.</p>
       </div>
     </footer>
@@ -435,6 +427,7 @@
       <a
         href="https://github.com/GurbanmyradowMeylis"
         class="text-blue-500 underline"
+        target="_blank"
         >Creator</a
       >
     </div>

@@ -56,12 +56,11 @@ cardContentArr.forEach((object) => {
     <img
       src="${object.src}"
       alt="${object.alt}"
-      class="max-2xl:w-72 max-2xl:h-w-72"
+      class="max-2xl:w-72 max-xl:w-60 max-2xl:h-w-72 max-xl:h-52 max-xl:object-contain"
       />
     <div class="line"></div>
     <h1 class="common-style-title">${object.title}</h1>
-    <p>${object.p}</p>
-`;
+    <p>${object.p}</p>`;
   cardParent.append(flexCard);
 });
 

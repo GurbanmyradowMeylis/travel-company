@@ -4,16 +4,16 @@
 
 @layer components {
   p {
-    @apply font-Lato-Regular max-2xl:text-sm;
+    @apply font-Lato-Regular max-2xl:text-sm max-xl:text-xs;
   }
   .primary-button {
     @apply py-2 px-12 font-Lato-Black border-2 text-secondary-color border-secondary-color rounded hover:bg-secondary-color transition-colors duration-300 hover:text-primary-color max-2xl:text-sm;
   }
   .main-style-title {
-    @apply text-7xl font-Cardo-Bold text-secondary-color max-2xl:text-6xl;
+    @apply text-7xl font-Cardo-Bold text-secondary-color max-2xl:text-6xl max-xl:text-5xl;
   }
   .common-style-title {
-    @apply text-4xl font-Cardo-Bold text-secondary-color max-2xl:text-3xl;
+    @apply text-4xl font-Cardo-Bold text-secondary-color max-2xl:text-3xl max-xl:text-2xl;
   }
   .limiter-container {
     @apply mx-16;
@@ -23,18 +23,24 @@
   }
 
   .line {
-    @apply w-14 bg-secondary-color h-1;
+    @apply w-14 bg-secondary-color h-1 max-xl:h-[2px];
   }
   .divider {
     @apply line w-full my-3;
+  }
+  .textarea {
+    width: 30ch;
+    height: 10ch;
   }
   .main-style-input {
     @apply border-2 py-2 px-6 border-secondary-color rounded placeholder:text-secondary-color w-full;
   }
   .main-style-card {
-    @apply border-2 rounded h-fit border-secondary-color py-8 px-14 text-center max-2xl:py-4 max-2xl:px-7;
+    @apply border-2 rounded h-fit border-secondary-color py-8 px-14 text-center max-2xl:py-4 max-2xl:px-7 max-xl:py-2;
   }
-
+  .arrow {
+    @apply absolute top-28 border-[3px] border-secondary-color p-5 rounded-md bg-primary-color;
+  }
   .background-image {
     background-image: url("../assets/images/1-section/scribbleDark.png"),
       url("../assets/images/1-section/Scribble\ Lightest.png");
