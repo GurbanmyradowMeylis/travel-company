@@ -634,7 +634,7 @@ p {
 
 .flex-card {
   display: flex;
-  flex: 0 0 30%;
+  flex: 0 0 25%;
   flex-direction: column;
   gap: 1.25rem;
 }
@@ -749,8 +749,9 @@ p {
 .background-image {
   background-image: url("../assets/images/1-section/scribbleDark.png"),
       url("../assets/images/1-section/Scribble\ Lightest.png");
-  background-position: 100% 195%, 0% 10%;
+  background-position: 100% 120%, 0% -10%;
   background-repeat: no-repeat, no-repeat;
+  background-size: 10dvw 40dvh, 30dvw 100dvh;
 }
 
 .background-image-1 {
@@ -758,40 +759,46 @@ p {
       url("../assets/images/2-section/Scribble-left.png");
   background-position: 0% 0%, 100% 100%;
   background-repeat: no-repeat, no-repeat;
+  background-size: 30dvw 20dvh, 30dvw 10dvh;
 }
 
 .background-image-2 {
   background-image: url("../assets/images/3-section/Scribble-right.png"),
       url("../assets/images/3-section/Scribble-left.png");
-  background-position: 0% 60%, 100% 70%;
+  background-position: 0% 0%, 100% 70%;
   background-repeat: no-repeat, no-repeat;
+  background-size: 5dvw 65dvh, 8dvw 50dvh;
 }
 
-/* ! it is available when next section done */
-
 .background-image-3 {
-  background-image: url("../assets/images/4-section/Scribble\ Dark.png");
-  background-position: 10% 55%;
+  background-image: url("../assets/images/4-section/Scribble\ Dark.png"),
+      url("../assets/images/4-section/Scribble\ Lightest.png");
+  background-position: 30% 85%, 100% 100%;
   background-repeat: no-repeat;
+  background-size: 20dvw 15dvh, 25dvw 80dvh;
 }
 
 .background-image-4 {
   background-image: url("../assets/images/6-section/Scribble\ Light.png");
-  background-position: 0% 100%;
+  background-position: 0% 104%;
   background-repeat: no-repeat;
+  background-size: 20dvw 15dvh;
 }
 
 .background-image-5 {
   background-image: url("../assets/images/8-section/Scribble\ Dark.png"),
-      url("../assets/images/8-section/Scribble\ Dark2.png");
-  background-position: 100% 90%, 0% 30%;
+      /*!  ⬆️ right */ url("../assets/images/8-section/Scribble\ Dark2.png");
+  /* ⬅️ left */
+  background-position: 100% 100%, 0% /*(l)*/ 25% /*(t)*/;
   background-repeat: no-repeat, no-repeat;
+  background-size: 30dvw 15dvh, 20dvw 20dvh;
 }
 
 .background-image-6 {
   background-image: url("../assets/images/11-section/Scribble\ Dark.png");
-  background-position: 0% 80%;
+  background-position: 0% 90%;
   background-repeat: no-repeat;
+  background-size: 30dvw 15dvh;
 }
 
 .absolute {
@@ -800,10 +807,6 @@ p {
 
 .relative {
   position: relative;
-}
-
-.-bottom-1\/4 {
-  bottom: -25%;
 }
 
 .-left-10 {
@@ -828,6 +831,10 @@ p {
 
 .top-1\/4 {
   top: 25%;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mb-12 {
@@ -943,10 +950,6 @@ p {
   align-items: flex-start;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -963,6 +966,10 @@ p {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -973,10 +980,6 @@ p {
 
 .gap-14 {
   gap: 3.5rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .gap-2 {
@@ -1007,14 +1010,6 @@ p {
   --tw-space-x-reverse: 0;
   margin-right: calc(5rem * var(--tw-space-x-reverse));
   margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.self-start {
-  align-self: flex-start;
-}
-
-.self-end {
-  align-self: flex-end;
 }
 
 .whitespace-nowrap {
@@ -1074,10 +1069,6 @@ p {
   padding-bottom: 270px;
 }
 
-.pb-\[400px\] {
-  padding-bottom: 400px;
-}
-
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -1104,6 +1095,10 @@ p {
 
 .pt-80 {
   padding-top: 20rem;
+}
+
+.pt-\[400px\] {
+  padding-top: 400px;
 }
 
 .text-center {
@@ -1241,6 +1236,10 @@ p {
     gap: 1rem;
   }
 
+  .max-2xl\:p-10 {
+    padding: 2.5rem;
+  }
+
   .max-2xl\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -1257,10 +1256,6 @@ p {
     padding-bottom: 135px;
   }
 
-  .max-2xl\:pb-\[200px\] {
-    padding-bottom: 200px;
-  }
-
   .max-2xl\:pb-\[77\.5px\] {
     padding-bottom: 77.5px;
   }
@@ -1275,6 +1270,10 @@ p {
 
   .max-2xl\:pt-40 {
     padding-top: 10rem;
+  }
+
+  .max-2xl\:pt-\[200px\] {
+    padding-top: 200px;
   }
 
   .max-2xl\:text-lg {

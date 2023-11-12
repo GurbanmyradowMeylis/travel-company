@@ -19,7 +19,7 @@
     @apply mx-16;
   }
   .flex-card {
-    @apply flex flex-col gap-5 flex-[0_0_30%] max-2xl:gap-3;
+    @apply flex flex-col gap-5 flex-[0_0_25%] max-2xl:gap-3;
   }
 
   .line {
@@ -44,8 +44,9 @@
   .background-image {
     background-image: url("../assets/images/1-section/scribbleDark.png"),
       url("../assets/images/1-section/Scribble\ Lightest.png");
-    background-position: 100% 195%, 0% 10%;
+    background-position: 100% 120%, 0% -10%;
     background-repeat: no-repeat, no-repeat;
+    background-size: 10dvw 40dvh, 30dvw 100dvh;
   }
 
   .background-image-1 {
@@ -53,39 +54,45 @@
       url("../assets/images/2-section/Scribble-left.png");
     background-position: 0% 0%, 100% 100%;
     background-repeat: no-repeat, no-repeat;
+    background-size: 30dvw 20dvh, 30dvw 10dvh;
   }
 
   .background-image-2 {
     background-image: url("../assets/images/3-section/Scribble-right.png"),
       url("../assets/images/3-section/Scribble-left.png");
-    background-position: 0% 60%, 100% 70%;
+    background-position: 0% 0%, 100% 70%;
     background-repeat: no-repeat, no-repeat;
+    background-size: 5dvw 65dvh, 8dvw 50dvh;
   }
 
-  /* ! it is available when next section done */
   .background-image-3 {
-    background-image: url("../assets/images/4-section/Scribble\ Dark.png");
-    background-position: 10% 55%;
+    background-image: url("../assets/images/4-section/Scribble\ Dark.png"),
+      url("../assets/images/4-section/Scribble\ Lightest.png");
+    background-position: 30% 85%, 100% 100%;
     background-repeat: no-repeat;
+    background-size: 20dvw 15dvh, 25dvw 80dvh;
   }
 
   .background-image-4 {
     background-image: url("../assets/images/6-section/Scribble\ Light.png");
-    background-position: 0% 100%;
+    background-position: 0% 104%;
     background-repeat: no-repeat;
+    background-size: 20dvw 15dvh;
   }
 
   .background-image-5 {
     background-image: url("../assets/images/8-section/Scribble\ Dark.png"),
-      url("../assets/images/8-section/Scribble\ Dark2.png");
-    background-position: 100% 90%, 0% 30%;
+      /*!  ⬆️ right */ url("../assets/images/8-section/Scribble\ Dark2.png"); /* ⬅️ left */
+    background-position: 100% 100%, 0% /*(l)*/ 25% /*(t)*/;
     background-repeat: no-repeat, no-repeat;
+    background-size: 30dvw 15dvh, 20dvw 20dvh;
   }
 
   .background-image-6 {
     background-image: url("../assets/images/11-section/Scribble\ Dark.png");
-    background-position: 0% 80%;
+    background-position: 0% 90%;
     background-repeat: no-repeat;
+    background-size: 30dvw 15dvh;
   }
 }
 
