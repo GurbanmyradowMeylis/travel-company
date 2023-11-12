@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       screens: {
         "2xl": "1537px",
-        xl: "1045px",
+        xl: "1281px",
       },
       colors: {
         "primary-color": "#EAE8E8",

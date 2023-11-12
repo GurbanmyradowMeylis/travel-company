@@ -545,7 +545,7 @@ p {
   }
 }
 
-@media not all and (min-width: 1045px) {
+@media not all and (min-width: 1281px) {
   p {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -598,7 +598,7 @@ p {
   }
 }
 
-@media not all and (min-width: 1045px) {
+@media not all and (min-width: 1281px) {
   .main-style-title {
     font-size: 3rem;
     line-height: 1;
@@ -620,7 +620,7 @@ p {
   }
 }
 
-@media not all and (min-width: 1045px) {
+@media not all and (min-width: 1281px) {
   .common-style-title {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -652,7 +652,7 @@ p {
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
-@media not all and (min-width: 1045px) {
+@media not all and (min-width: 1281px) {
   .line {
     height: 2px;
   }
@@ -665,7 +665,7 @@ p {
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
-@media not all and (min-width: 1045px) {
+@media not all and (min-width: 1281px) {
   .divider {
     height: 2px;
   }
@@ -727,7 +727,7 @@ p {
   }
 }
 
-@media not all and (min-width: 1045px) {
+@media not all and (min-width: 1281px) {
   .main-style-card {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -1271,7 +1271,7 @@ p {
   }
 }
 
-@media not all and (min-width: 1045px) {
+@media not all and (min-width: 1281px) {
   .max-xl\:h-12 {
     height: 3rem;
   }
@@ -1310,6 +1310,10 @@ p {
 
   .max-xl\:w-80 {
     width: 20rem;
+  }
+
+  .max-xl\:w-52 {
+    width: 13rem;
   }
 
   .max-xl\:max-w-\[16rem\] {
