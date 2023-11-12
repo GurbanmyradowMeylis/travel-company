@@ -1,3 +1,7 @@
 # travel-company
 
-[this is the site in vercel](https://travel-company-phi.vercel.app)
+[reference](https://travel-company-phi.vercel.app)
+
+It is landing page.
+
+This site available only for Computer and Laptop.
