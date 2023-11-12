@@ -943,6 +943,10 @@ p {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1003,6 +1007,14 @@ p {
   --tw-space-x-reverse: 0;
   margin-right: calc(5rem * var(--tw-space-x-reverse));
   margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .whitespace-nowrap {
@@ -1310,10 +1322,6 @@ p {
 
   .max-xl\:w-80 {
     width: 20rem;
-  }
-
-  .max-xl\:w-52 {
-    width: 13rem;
   }
 
   .max-xl\:max-w-\[16rem\] {
